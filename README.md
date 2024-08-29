@@ -1,6 +1,7 @@
 # MarioVGG
 
-**Video Game Generation: A Practical Study using Mario**\
+**Video Game Generation: A Practical Study using Mario**
+
 Virtuals Protocol
 
 ## Abstract
