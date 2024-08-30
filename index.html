@@ -122,25 +122,28 @@ Mario"/>
 </section>
 <!-- End paper abstract -->
 
-
-<section class="section hero is-small">
+<section class="hero is-small">
   <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Methods</h2>
-          <div class="content has-text-justified">
-            <p></p>
-            <img src="static/images/MarioVGG_overview.png" alt="MarioVGG Overview" />
-            <!--<p><b>Sample text:</b>-->
-             <!-- Text -->
-            </p>
-          </div>
+    <div class="container is-centered has-text-centered">
+      <h2 class="title is-3">Methods</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+          <div class="item" style="max-width: 100%; display: flex; flex-direction: column; align-items: center;">
+          <img src="static/images/MarioVGG_overview.png" alt="MarioVGG Overview" style="max-width: 50%;" />
+          <p style="margin-top: 10px;">MarioVGG is a text-to-video model which takes in the initial game state as a single image frame, and an action in the form of a text prompt. It then outputs a video (a sequence of frames) depicting the action in the game.</p>
+        </div>
+        <div class="item" style="max-width: 100%; display: flex; flex-direction: column; align-items: center;">
+          <img src="static/images/mariovgg-extended-examples.png" alt="Extended MarioVGG examples" style="max-width: 50%;" />
+          <p style="margin-top: 10px;">Comparison between MarioVGG-generated frames and ground truth frames.</p>
+        </div>
+        <div class="item" style="max-width: 100%; display: flex; flex-direction: column; align-items: center;">
+          <img src="static/images/chaining-mariovgg.png" alt="Chaining example" style="max-width: 50%;" />
+          <p style="margin-top: 10px;">To generate and maintain gameplay for longer horizons, we chain together multiple model generations recursively.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 
   
 <section class="hero is-small">
@@ -156,22 +159,6 @@ Mario"/>
         </div>
         <div class="item" style="max-width: 100%; display: flex; justify-content: center;">
           <img src="static/images/example_set3.gif" alt="Examples of MarioVGG gameplay"" />
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container is-centered has-text-centered">
-      <h2 class="title is-3">Additional Illustrations</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item" style="max-width: 100%; display: flex; justify-content: center;">
-          <img src="static/images/mariovgg-extended-examples.png" alt="Extended MarioVGG examples" style="max-width: 50%;" />
-        </div>
-        <div class="item" style="max-width: 100%; display: flex; justify-content: center;">
-          <img src="static/images/chaining-mariovgg.png" alt="Chaining example" style="max-width: 50%;" />
         </div>
       </div>
     </div>
